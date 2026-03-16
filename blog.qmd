@@ -1,0 +1,238 @@
+---
+title: "📝 技术博客"
+toc: true
+---
+
+> 记录我的学习笔记、技术分享与思考。内容涵盖数据科学、Web 开发、Quarto 使用技巧等。
+
+---
+
+## 🔥 精选文章
+
+---
+
+### 🌟 Quarto 入门指南：从零构建个人网站
+
+*📅 2025-03-10 · ⏱️ 5 分钟阅读 · 🏷️ Quarto / 建站*
+
+Quarto 是由 Posit（原 RStudio）开发的新一代开源科学出版系统，它支持 Python、R、Julia 和 Observable JS，可以生成 HTML 网站、PDF 文档、幻灯片等多种格式的输出。
+
+**为什么选择 Quarto？**
+
+- ✅ 一套工具，多种输出格式
+- ✅ 原生支持 Python 和 R 代码执行
+- ✅ 与 GitHub Pages 无缝集成
+- ✅ 丰富的主题和自定义选项
+
+**快速开始：**
+
+```bash
+# 1. 安装 Quarto（从官网下载）
+# https://quarto.org/docs/get-started/
+
+# 2. 创建新网站项目
+quarto create project website mysite
+
+# 3. 本地预览
+cd mysite
+quarto preview
+
+# 4. 构建静态文件
+quarto render
+```
+
+**项目结构说明：**
+
+```
+mysite/
+├── _quarto.yml      # 网站配置文件
+├── index.qmd        # 首页
+├── about.qmd        # 关于页面
+└── styles.css       # 自定义样式
+```
+
+`_quarto.yml` 是网站的核心配置文件，控制导航栏、主题、格式等：
+
+```yaml
+project:
+  type: website
+
+website:
+  title: "我的个人网站"
+  navbar:
+    left:
+      - href: index.qmd
+        text: 首页
+      - about.qmd
+
+format:
+  html:
+    theme: cosmo
+    css: styles.css
+```
+
+> 💡 **小贴士：** Quarto 的 `.qmd` 文件就是增强版的 Markdown，你可以在其中嵌入可执行的代码块！
+
+---
+
+### 🐍 Python 数据可视化的 10 个实用技巧
+
+*📅 2025-02-28 · ⏱️ 8 分钟阅读 · 🏷️ Python / 数据可视化*
+
+数据可视化是数据分析工作中不可或缺的一环。好的可视化能让数据"说话"，帮助受众快速理解复杂的数据关系。
+
+**技巧 1：使用 Plotly 创建交互式图表**
+
+```python
+import plotly.express as px
+import pandas as pd
+
+# 创建示例数据
+df = pd.DataFrame({
+    "月份": ["1月", "2月", "3月", "4月", "5月", "6月"],
+    "销售额": [120, 145, 98, 167, 203, 189],
+    "利润": [30, 42, 25, 55, 68, 61]
+})
+
+# 绘制交互式折线图
+fig = px.line(df, x="月份", y=["销售额", "利润"],
+              title="2025年上半年销售数据",
+              labels={"value": "金额（万元）", "variable": "指标"})
+fig.show()
+```
+
+**技巧 2：用热力图展示相关性**
+
+```python
+import seaborn as sns
+import matplotlib.pyplot as plt
+import numpy as np
+
+# 生成相关性矩阵
+corr_matrix = df.corr()
+
+# 绘制热力图
+plt.figure(figsize=(8, 6))
+sns.heatmap(corr_matrix, annot=True, cmap="coolwarm",
+            center=0, fmt=".2f")
+plt.title("特征相关性热力图")
+plt.tight_layout()
+plt.show()
+```
+
+**技巧 3：设置中文字体（解决乱码问题）**
+
+```python
+import matplotlib.pyplot as plt
+import matplotlib
+
+# Windows 系统设置中文字体
+matplotlib.rcParams['font.sans-serif'] = ['Microsoft YaHei']
+matplotlib.rcParams['axes.unicode_minus'] = False
+
+plt.title("中文标题不再乱码 ✓")
+```
+
+> 📌 **更多技巧请关注本博客更新！**
+
+---
+
+### 🔀 Git 工作流最佳实践
+
+*📅 2025-02-15 · ⏱️ 6 分钟阅读 · 🏷️ Git / 团队协作*
+
+良好的 Git 工作流是高效团队协作的基础。下面介绍几种常用的分支管理策略。
+
+**Git Flow 工作流：**
+
+```
+main          ─────●─────────────────────────●──
+                   │                         │
+develop       ─────●──────────●──────────────●──
+                              │
+feature/*     ────────────────●──●
+```
+
+**常用命令速查：**
+
+```bash
+# 创建功能分支
+git checkout -b feature/新功能名称
+
+# 提交规范（使用约定式提交）
+git commit -m "feat: 添加用户登录功能"
+git commit -m "fix: 修复密码验证 bug"
+git commit -m "docs: 更新 README"
+
+# 合并前先 rebase，保持提交历史整洁
+git rebase main
+git checkout main
+git merge --no-ff feature/新功能名称
+
+# 打标签发布版本
+git tag -a v1.0.0 -m "Release version 1.0.0"
+git push origin v1.0.0
+```
+
+**提交信息规范（Conventional Commits）：**
+
+| 类型 | 说明 |
+|------|------|
+| `feat` | 新功能 |
+| `fix` | Bug 修复 |
+| `docs` | 文档变更 |
+| `style` | 代码格式调整 |
+| `refactor` | 代码重构 |
+| `test` | 添加测试 |
+| `chore` | 构建/工具变更 |
+
+---
+
+## 📚 学习笔记系列
+
+### Quarto 学习笔记
+
+::: {.note-list}
+
+::: {.note-item}
+**📖 [Note 01] Quarto 基础语法**  
+*2025-01-15*  
+介绍 Quarto Markdown 的基础语法，包括标题、列表、链接、图片等常用元素，以及 Quarto 特有的 Callout、Div 等扩展语法。
+:::
+
+::: {.note-item}
+**📖 [Note 02] Quarto 代码块详解**  
+*2025-01-22*  
+深入讲解 Quarto 代码块的各种选项：`echo`、`eval`、`warning`、`fig-cap` 等，以及如何在文档中嵌入可执行的 Python/R 代码。
+:::
+
+::: {.note-item}
+**📖 [Note 03] Quarto 网站部署到 GitHub Pages**  
+*2025-02-01*  
+手把手教你配置 GitHub Actions，实现每次 push 代码后自动构建 Quarto 网站并部署到 GitHub Pages。
+:::
+
+:::
+
+---
+
+## 🏷️ 标签云
+
+::: {.tag-cloud}
+<a href="#" class="tag-link">Quarto</a>
+<a href="#" class="tag-link tag-hot">Python</a>
+<a href="#" class="tag-link">数据可视化</a>
+<a href="#" class="tag-link">机器学习</a>
+<a href="#" class="tag-link tag-hot">数据科学</a>
+<a href="#" class="tag-link">Git</a>
+<a href="#" class="tag-link">Web 开发</a>
+<a href="#" class="tag-link">FastAPI</a>
+<a href="#" class="tag-link">Docker</a>
+<a href="#" class="tag-link">开源</a>
+<a href="#" class="tag-link">R 语言</a>
+<a href="#" class="tag-link">学习笔记</a>
+:::
+
+---
+
+> ✉️ **订阅更新：** 如果你喜欢这里的内容，欢迎在 [GitHub](https://github.com/xiaozz-zl) 上 Watch 或者 Star 本项目，以获取最新文章通知！

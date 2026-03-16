@@ -1,0 +1,36 @@
+project:
+  type: website
+
+website:
+  title: "小枫的个人空间"
+  favicon: "images/favicon.ico"
+  navbar:
+    left:
+      - href: index.qmd
+        text: 🏠 首页
+      - href: about.qmd
+        text: 👤 关于我
+      - href: projects.qmd
+        text: 🚀 项目
+      - href: blog.qmd
+        text: 📝 博客
+    right:
+      - icon: github
+        href: https://github.com/xiaozz-zl
+        target: _blank
+
+  page-footer:
+    left: "© 2025 小枫 · 用 [Quarto](https://quarto.org) 构建"
+    right:
+      - icon: github
+        href: https://github.com/xiaozz-zl
+
+format:
+  html:
+    theme:
+      - cosmo
+    css: styles.css
+    toc: true
+    toc-title: "目录"
+    code-fold: true
+    highlight-style: github

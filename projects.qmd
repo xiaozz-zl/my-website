@@ -1,0 +1,170 @@
+---
+title: "🚀 我的项目"
+toc: true
+---
+
+> 这里展示了我的部分个人项目和开源贡献，涵盖数据科学、Web 开发等领域。
+
+---
+
+## 📊 数据科学类
+
+::: {.project-detail-card}
+### 📈 股票数据分析平台
+
+**简介：** 基于 Python + Dash 构建的交互式股票数据分析仪表盘，支持 A 股和美股的实时数据获取，提供多维度的技术指标分析与可视化。
+
+**核心功能：**
+- 实时抓取股票数据（使用 Tushare / Yahoo Finance API）
+- K 线图、均线、MACD 等技术指标的交互式展示
+- 自定义时间范围的历史数据对比分析
+- 多股票横向比较功能
+
+**技术栈：**
+
+::: {.tech-badges}
+<span class="badge-python">Python</span>
+<span class="badge-lib">Dash</span>
+<span class="badge-lib">Pandas</span>
+<span class="badge-lib">Plotly</span>
+<span class="badge-lib">Tushare</span>
+:::
+
+**项目成果：** GitHub 获得 120+ Stars，月活用户 50+
+
+[🔗 GitHub 仓库](https://github.com/xiaozz-zl) | [🌐 在线演示](https://github.com/xiaozz-zl)
+:::
+
+---
+
+::: {.project-detail-card}
+### 🤖 智能文本分类器
+
+**简介：** 基于预训练 BERT 模型的中文新闻文本自动分类系统，支持 10 个新闻类别的分类，并提供 Web API 接口供调用。
+
+**核心功能：**
+- 使用 HuggingFace Transformers 库微调 BERT 模型
+- 支持批量文本分类，QPS 达 100+
+- 提供 FastAPI RESTful 接口
+- 模型准确率 94.5%，F1 Score 0.943
+
+**技术栈：**
+
+::: {.tech-badges}
+<span class="badge-python">Python</span>
+<span class="badge-lib">PyTorch</span>
+<span class="badge-lib">Transformers</span>
+<span class="badge-lib">FastAPI</span>
+<span class="badge-lib">Docker</span>
+:::
+
+**项目亮点：** 相比传统机器学习方法，准确率提升 15%；通过 Docker 容器化部署，实现一键上线
+
+[🔗 GitHub 仓库](https://github.com/xiaozz-zl) | [📄 技术报告](blog.qmd)
+:::
+
+---
+
+## 🌐 Web 开发类
+
+::: {.project-detail-card}
+### 🌍 个人博客系统（本站）
+
+**简介：** 你现在访问的就是！使用 Quarto 构建的静态个人网站，通过 GitHub Actions 实现自动化构建与部署。
+
+**核心功能：**
+- Quarto Markdown 写作，支持代码高亮与交互图表
+- 自定义 CSS 主题，响应式布局适配移动端
+- GitHub Actions 自动构建，推送即部署
+- 支持 R 和 Python 代码块的实时执行
+
+**技术栈：**
+
+::: {.tech-badges}
+<span class="badge-quarto">Quarto</span>
+<span class="badge-lib">HTML/CSS</span>
+<span class="badge-lib">GitHub Actions</span>
+<span class="badge-lib">GitHub Pages</span>
+:::
+
+**学习价值：** 这是我学习 Quarto 的实践项目，详细记录了搭建过程
+
+[🔗 GitHub 仓库](https://github.com/xiaozz-zl) | [📝 搭建教程](blog.qmd)
+:::
+
+---
+
+::: {.project-detail-card}
+### 📋 任务管理 Web 应用
+
+**简介：** 一款简洁高效的任务管理 Web 应用，支持任务的增删改查、标签分类、截止日期提醒等功能。
+
+**核心功能：**
+- Vue.js 前端，实现流畅的 SPA 体验
+- FastAPI + SQLite 后端 API
+- JWT 用户认证与权限管理
+- 响应式设计，支持移动端使用
+
+**技术栈：**
+
+::: {.tech-badges}
+<span class="badge-js">Vue.js</span>
+<span class="badge-python">Python</span>
+<span class="badge-lib">FastAPI</span>
+<span class="badge-lib">SQLite</span>
+<span class="badge-lib">JWT</span>
+:::
+
+[🔗 GitHub 仓库](https://github.com/xiaozz-zl)
+:::
+
+---
+
+## 🔬 数据分析报告
+
+::: {.project-detail-card}
+### 📉 2024 年全国房价趋势分析
+
+**简介：** 使用 Python 爬取并分析 2024 年全国主要城市的房价数据，生成可交互的可视化报告，发布为 Quarto HTML 文档。
+
+**分析维度：**
+- 各城市均价走势对比
+- 环比/同比涨跌幅热力图
+- 成交量与价格的相关性分析
+- 基于线性回归的短期价格预测
+
+**技术栈：**
+
+::: {.tech-badges}
+<span class="badge-python">Python</span>
+<span class="badge-lib">Pandas</span>
+<span class="badge-lib">Plotly</span>
+<span class="badge-lib">Scikit-learn</span>
+<span class="badge-quarto">Quarto</span>
+:::
+
+```python
+# 示例：使用 Pandas 计算环比增长率
+import pandas as pd
+
+df = pd.read_csv("house_price.csv")
+df["环比增长"] = df.groupby("城市")["均价"].pct_change() * 100
+print(df.head())
+```
+
+[🔗 查看报告](blog.qmd) | [🔗 GitHub](https://github.com/xiaozz-zl)
+:::
+
+---
+
+## 🤝 开源贡献
+
+| 项目 | 贡献内容 | Stars |
+|------|----------|-------|
+| [pandas-docs-zh](https://github.com) | 翻译中文文档 20+ 页 | ⭐ 2.1k |
+| [awesome-quarto](https://github.com) | 提交 5 个实用模板 | ⭐ 850 |
+| [fastapi-starter](https://github.com) | 修复 3 个 issues，新增功能 | ⭐ 430 |
+
+---
+
+> 💡 **想合作？** 如果你对这些项目感兴趣，或者有好的项目想一起做，欢迎[联系我](about.qmd#联系我)！

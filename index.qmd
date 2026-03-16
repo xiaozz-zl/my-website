@@ -1,0 +1,142 @@
+---
+title: "👋 你好，我是小枫"
+subtitle: "数据科学爱好者 · 全栈开发者 · 终身学习者"
+toc: false
+page-layout: full
+---
+
+::: {.hero-section}
+<div class="hero-container">
+  <div class="hero-text">
+    <h1 class="hero-title">Hi, I'm <span class="highlight">小枫</span> 👋</h1>
+    <p class="hero-subtitle">数据科学 · 全栈开发 · 开源爱好者</p>
+    <p class="hero-desc">
+      我是一名热爱技术的开发者，专注于数据分析与可视化、Web 开发以及机器学习领域。
+      热衷于用代码解决实际问题，喜欢分享知识和学习新技术。
+    </p>
+    <div class="hero-buttons">
+      <a href="about.qmd" class="btn-primary">了解更多 →</a>
+      <a href="projects.qmd" class="btn-secondary">查看项目</a>
+    </div>
+  </div>
+  <div class="hero-avatar">
+    <div class="avatar-circle">🧑‍💻</div>
+  </div>
+</div>
+:::
+
+---
+
+## 🌟 技能亮点
+
+::: {.skills-grid}
+
+::: {.skill-card}
+### 📊 数据科学
+- Python (Pandas, NumPy, Matplotlib)
+- R 语言数据分析
+- 机器学习 (Scikit-learn)
+- 数据可视化 (ggplot2, Plotly)
+:::
+
+::: {.skill-card}
+### 🌐 Web 开发
+- HTML / CSS / JavaScript
+- React & Vue.js 前端框架
+- Python Flask / FastAPI
+- Quarto 文档与网站构建
+:::
+
+::: {.skill-card}
+### 🛠️ 工具与平台
+- Git & GitHub 版本控制
+- Docker 容器化部署
+- Linux 系统运维
+- Jupyter Notebook / VS Code
+:::
+
+:::
+
+---
+
+## 🚀 精选项目
+
+::: {.projects-grid}
+
+::: {.project-card}
+#### 📈 股票数据分析平台
+基于 Python + Dash 构建的交互式股票数据分析仪表盘，支持实时数据获取与多维度可视化分析。
+
+**技术栈：** Python · Dash · Pandas · Plotly
+
+[查看详情 →](projects.qmd)
+:::
+
+::: {.project-card}
+#### 🤖 智能文本分类器
+利用 BERT 模型实现新闻文本的自动分类，准确率达 94.5%，已开源至 GitHub。
+
+**技术栈：** Python · PyTorch · Transformers · FastAPI
+
+[查看详情 →](projects.qmd)
+:::
+
+::: {.project-card}
+#### 🌍 个人博客系统
+使用 Quarto 构建的静态博客网站，支持 Markdown 写作，自动部署到 GitHub Pages。
+
+**技术栈：** Quarto · GitHub Actions · HTML/CSS
+
+[查看详情 →](projects.qmd)
+:::
+
+:::
+
+---
+
+## 📝 最新博客
+
+::: {.blog-preview}
+
+::: {.blog-item}
+**[Quarto 入门指南：从零构建个人网站](blog.qmd)**  
+*2025-03-10 · 5 分钟阅读*  
+Quarto 是新一代科学出版系统，本文带你从零开始搭建一个漂亮的个人网站...
+:::
+
+::: {.blog-item}
+**[Python 数据可视化的 10 个技巧](blog.qmd)**  
+*2025-02-28 · 8 分钟阅读*  
+数据可视化是数据分析的重要环节，这里分享我在日常工作中积累的实用技巧...
+:::
+
+::: {.blog-item}
+**[Git 工作流最佳实践](blog.qmd)**  
+*2025-02-15 · 6 分钟阅读*  
+良好的 Git 工作流能够大大提升团队协作效率，本文介绍几种常见的分支管理策略...
+:::
+
+[查看全部博客 →](blog.qmd)
+
+:::
+
+---
+
+## 📬 联系我
+
+::: {.contact-section}
+<div class="contact-grid">
+  <div class="contact-item">
+    <span class="contact-icon">📧</span>
+    <span>xiaofeng@example.com</span>
+  </div>
+  <div class="contact-item">
+    <span class="contact-icon">🐙</span>
+    <a href="https://github.com/xiaozz-zl" target="_blank">github.com/xiaozz-zl</a>
+  </div>
+  <div class="contact-item">
+    <span class="contact-icon">📍</span>
+    <span>中国 · 北京</span>
+  </div>
+</div>
+:::

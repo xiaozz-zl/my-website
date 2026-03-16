@@ -1,0 +1,156 @@
+[
+  {
+    "objectID": "projects.html",
+    "href": "projects.html",
+    "title": "🚀 我的项目",
+    "section": "",
+    "text": "这里展示了我的部分个人项目和开源贡献，涵盖数据科学、Web 开发等领域。"
+  },
+  {
+    "objectID": "projects.html#数据科学类",
+    "href": "projects.html#数据科学类",
+    "title": "🚀 我的项目",
+    "section": "📊 数据科学类",
+    "text": "📊 数据科学类\n\n📈 股票数据分析平台\n简介： 基于 Python + Dash 构建的交互式股票数据分析仪表盘，支持 A 股和美股的实时数据获取，提供多维度的技术指标分析与可视化。\n核心功能： - 实时抓取股票数据（使用 Tushare / Yahoo Finance API） - K 线图、均线、MACD 等技术指标的交互式展示 - 自定义时间范围的历史数据对比分析 - 多股票横向比较功能\n技术栈：\n\nPython Dash Pandas Plotly Tushare\n\n项目成果： GitHub 获得 120+ Stars，月活用户 50+\n🔗 GitHub 仓库 | 🌐 在线演示\n\n\n\n🤖 智能文本分类器\n简介： 基于预训练 BERT 模型的中文新闻文本自动分类系统，支持 10 个新闻类别的分类，并提供 Web API 接口供调用。\n核心功能： - 使用 HuggingFace Transformers 库微调 BERT 模型 - 支持批量文本分类，QPS 达 100+ - 提供 FastAPI RESTful 接口 - 模型准确率 94.5%，F1 Score 0.943\n技术栈：\n\nPython PyTorch Transformers FastAPI Docker\n\n项目亮点： 相比传统机器学习方法，准确率提升 15%；通过 Docker 容器化部署，实现一键上线\n🔗 GitHub 仓库 | 📄 技术报告"
+  },
+  {
+    "objectID": "projects.html#web-开发类",
+    "href": "projects.html#web-开发类",
+    "title": "🚀 我的项目",
+    "section": "🌐 Web 开发类",
+    "text": "🌐 Web 开发类\n\n🌍 个人博客系统（本站）\n简介： 你现在访问的就是！使用 Quarto 构建的静态个人网站，通过 GitHub Actions 实现自动化构建与部署。\n核心功能： - Quarto Markdown 写作，支持代码高亮与交互图表 - 自定义 CSS 主题，响应式布局适配移动端 - GitHub Actions 自动构建，推送即部署 - 支持 R 和 Python 代码块的实时执行\n技术栈：\n\nQuarto HTML/CSS GitHub Actions GitHub Pages\n\n学习价值： 这是我学习 Quarto 的实践项目，详细记录了搭建过程\n🔗 GitHub 仓库 | 📝 搭建教程\n\n\n\n📋 任务管理 Web 应用\n简介： 一款简洁高效的任务管理 Web 应用，支持任务的增删改查、标签分类、截止日期提醒等功能。\n核心功能： - Vue.js 前端，实现流畅的 SPA 体验 - FastAPI + SQLite 后端 API - JWT 用户认证与权限管理 - 响应式设计，支持移动端使用\n技术栈：\n\nVue.js Python FastAPI SQLite JWT\n\n🔗 GitHub 仓库"
+  },
+  {
+    "objectID": "projects.html#数据分析报告",
+    "href": "projects.html#数据分析报告",
+    "title": "🚀 我的项目",
+    "section": "🔬 数据分析报告",
+    "text": "🔬 数据分析报告\n\n📉 2024 年全国房价趋势分析\n简介： 使用 Python 爬取并分析 2024 年全国主要城市的房价数据，生成可交互的可视化报告，发布为 Quarto HTML 文档。\n分析维度： - 各城市均价走势对比 - 环比/同比涨跌幅热力图 - 成交量与价格的相关性分析 - 基于线性回归的短期价格预测\n技术栈：\n\nPython Pandas Plotly Scikit-learn Quarto\n\n# 示例：使用 Pandas 计算环比增长率\nimport pandas as pd\n\ndf = pd.read_csv(\"house_price.csv\")\ndf[\"环比增长\"] = df.groupby(\"城市\")[\"均价\"].pct_change() * 100\nprint(df.head())\n🔗 查看报告 | 🔗 GitHub"
+  },
+  {
+    "objectID": "projects.html#开源贡献",
+    "href": "projects.html#开源贡献",
+    "title": "🚀 我的项目",
+    "section": "🤝 开源贡献",
+    "text": "🤝 开源贡献\n\n\n\n项目\n贡献内容\nStars\n\n\n\n\npandas-docs-zh\n翻译中文文档 20+ 页\n⭐ 2.1k\n\n\nawesome-quarto\n提交 5 个实用模板\n⭐ 850\n\n\nfastapi-starter\n修复 3 个 issues，新增功能\n⭐ 430\n\n\n\n\n\n💡 想合作？ 如果你对这些项目感兴趣，或者有好的项目想一起做，欢迎联系我！"
+  },
+  {
+    "objectID": "blog.html",
+    "href": "blog.html",
+    "title": "📝 技术博客",
+    "section": "",
+    "text": "记录我的学习笔记、技术分享与思考。内容涵盖数据科学、Web 开发、Quarto 使用技巧等。"
+  },
+  {
+    "objectID": "blog.html#精选文章",
+    "href": "blog.html#精选文章",
+    "title": "📝 技术博客",
+    "section": "🔥 精选文章",
+    "text": "🔥 精选文章\n\n\n🌟 Quarto 入门指南：从零构建个人网站\n📅 2025-03-10 · ⏱️ 5 分钟阅读 · 🏷️ Quarto / 建站\nQuarto 是由 Posit（原 RStudio）开发的新一代开源科学出版系统，它支持 Python、R、Julia 和 Observable JS，可以生成 HTML 网站、PDF 文档、幻灯片等多种格式的输出。\n为什么选择 Quarto？\n\n✅ 一套工具，多种输出格式\n✅ 原生支持 Python 和 R 代码执行\n✅ 与 GitHub Pages 无缝集成\n✅ 丰富的主题和自定义选项\n\n快速开始：\n# 1. 安装 Quarto（从官网下载）\n# https://quarto.org/docs/get-started/\n\n# 2. 创建新网站项目\nquarto create project website mysite\n\n# 3. 本地预览\ncd mysite\nquarto preview\n\n# 4. 构建静态文件\nquarto render\n项目结构说明：\nmysite/\n├── _quarto.yml      # 网站配置文件\n├── index.qmd        # 首页\n├── about.qmd        # 关于页面\n└── styles.css       # 自定义样式\n_quarto.yml 是网站的核心配置文件，控制导航栏、主题、格式等：\nproject:\n  type: website\n\nwebsite:\n  title: \"我的个人网站\"\n  navbar:\n    left:\n      - href: index.qmd\n        text: 首页\n      - about.qmd\n\nformat:\n  html:\n    theme: cosmo\n    css: styles.css\n\n💡 小贴士： Quarto 的 .qmd 文件就是增强版的 Markdown，你可以在其中嵌入可执行的代码块！\n\n\n\n\n🐍 Python 数据可视化的 10 个实用技巧\n📅 2025-02-28 · ⏱️ 8 分钟阅读 · 🏷️ Python / 数据可视化\n数据可视化是数据分析工作中不可或缺的一环。好的可视化能让数据”说话”，帮助受众快速理解复杂的数据关系。\n技巧 1：使用 Plotly 创建交互式图表\nimport plotly.express as px\nimport pandas as pd\n\n# 创建示例数据\ndf = pd.DataFrame({\n    \"月份\": [\"1月\", \"2月\", \"3月\", \"4月\", \"5月\", \"6月\"],\n    \"销售额\": [120, 145, 98, 167, 203, 189],\n    \"利润\": [30, 42, 25, 55, 68, 61]\n})\n\n# 绘制交互式折线图\nfig = px.line(df, x=\"月份\", y=[\"销售额\", \"利润\"],\n              title=\"2025年上半年销售数据\",\n              labels={\"value\": \"金额（万元）\", \"variable\": \"指标\"})\nfig.show()\n技巧 2：用热力图展示相关性\nimport seaborn as sns\nimport matplotlib.pyplot as plt\nimport numpy as np\n\n# 生成相关性矩阵\ncorr_matrix = df.corr()\n\n# 绘制热力图\nplt.figure(figsize=(8, 6))\nsns.heatmap(corr_matrix, annot=True, cmap=\"coolwarm\",\n            center=0, fmt=\".2f\")\nplt.title(\"特征相关性热力图\")\nplt.tight_layout()\nplt.show()\n技巧 3：设置中文字体（解决乱码问题）\nimport matplotlib.pyplot as plt\nimport matplotlib\n\n# Windows 系统设置中文字体\nmatplotlib.rcParams['font.sans-serif'] = ['Microsoft YaHei']\nmatplotlib.rcParams['axes.unicode_minus'] = False\n\nplt.title(\"中文标题不再乱码 ✓\")\n\n📌 更多技巧请关注本博客更新！\n\n\n\n\n🔀 Git 工作流最佳实践\n📅 2025-02-15 · ⏱️ 6 分钟阅读 · 🏷️ Git / 团队协作\n良好的 Git 工作流是高效团队协作的基础。下面介绍几种常用的分支管理策略。\nGit Flow 工作流：\nmain          ─────●─────────────────────────●──\n                   │                         │\ndevelop       ─────●──────────●──────────────●──\n                              │\nfeature/*     ────────────────●──●\n常用命令速查：\n# 创建功能分支\ngit checkout -b feature/新功能名称\n\n# 提交规范（使用约定式提交）\ngit commit -m \"feat: 添加用户登录功能\"\ngit commit -m \"fix: 修复密码验证 bug\"\ngit commit -m \"docs: 更新 README\"\n\n# 合并前先 rebase，保持提交历史整洁\ngit rebase main\ngit checkout main\ngit merge --no-ff feature/新功能名称\n\n# 打标签发布版本\ngit tag -a v1.0.0 -m \"Release version 1.0.0\"\ngit push origin v1.0.0\n提交信息规范（Conventional Commits）：\n\n\n\n类型\n说明\n\n\n\n\nfeat\n新功能\n\n\nfix\nBug 修复\n\n\ndocs\n文档变更\n\n\nstyle\n代码格式调整\n\n\nrefactor\n代码重构\n\n\ntest\n添加测试\n\n\nchore\n构建/工具变更"
+  },
+  {
+    "objectID": "blog.html#学习笔记系列",
+    "href": "blog.html#学习笔记系列",
+    "title": "📝 技术博客",
+    "section": "📚 学习笔记系列",
+    "text": "📚 学习笔记系列\n\nQuarto 学习笔记\n\n\n📖 [Note 01] Quarto 基础语法\n2025-01-15\n介绍 Quarto Markdown 的基础语法，包括标题、列表、链接、图片等常用元素，以及 Quarto 特有的 Callout、Div 等扩展语法。\n\n\n📖 [Note 02] Quarto 代码块详解\n2025-01-22\n深入讲解 Quarto 代码块的各种选项：echo、eval、warning、fig-cap 等，以及如何在文档中嵌入可执行的 Python/R 代码。\n\n\n📖 [Note 03] Quarto 网站部署到 GitHub Pages\n2025-02-01\n手把手教你配置 GitHub Actions，实现每次 push 代码后自动构建 Quarto 网站并部署到 GitHub Pages。"
+  },
+  {
+    "objectID": "blog.html#标签云",
+    "href": "blog.html#标签云",
+    "title": "📝 技术博客",
+    "section": "🏷️ 标签云",
+    "text": "🏷️ 标签云\n\nQuarto Python 数据可视化 机器学习 数据科学 Git Web 开发 FastAPI Docker 开源 R 语言 学习笔记\n\n\n\n✉️ 订阅更新： 如果你喜欢这里的内容，欢迎在 GitHub 上 Watch 或者 Star 本项目，以获取最新文章通知！"
+  },
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "👤 关于我",
+    "section": "",
+    "text": "&lt;div class=\"big-avatar\"&gt;🧑‍💻&lt;/div&gt;\n\n\n&lt;h2&gt;小枫 &lt;span class=\"en-name\"&gt;Xiaofeng&lt;/span&gt;&lt;/h2&gt;\n&lt;p class=\"tagline\"&gt;数据科学爱好者 · 全栈开发者 · 终身学习者&lt;/p&gt;\n&lt;div class=\"info-tags\"&gt;\n  &lt;span class=\"tag\"&gt;📍 北京，中国&lt;/span&gt;\n  &lt;span class=\"tag\"&gt;🎓 计算机科学&lt;/span&gt;\n  &lt;span class=\"tag\"&gt;💼 3年工作经验&lt;/span&gt;\n&lt;/div&gt;\n\n\n\n大家好！我是小枫，一名充满热情的软件开发者和数据科学爱好者。我毕业于北京某知名高校计算机科学专业，目前在一家科技公司担任数据工程师。\n我热衷于探索数据背后的故事，喜欢用技术解决实际问题。业余时间我喜欢写技术博客、参与开源项目，以及不断学习新技术。这个网站是我用 Quarto 构建的个人空间，用来记录我的学习历程和项目成果。"
+  },
+  {
+    "objectID": "about.html#个人介绍",
+    "href": "about.html#个人介绍",
+    "title": "👤 关于我",
+    "section": "",
+    "text": "&lt;div class=\"big-avatar\"&gt;🧑‍💻&lt;/div&gt;\n\n\n&lt;h2&gt;小枫 &lt;span class=\"en-name\"&gt;Xiaofeng&lt;/span&gt;&lt;/h2&gt;\n&lt;p class=\"tagline\"&gt;数据科学爱好者 · 全栈开发者 · 终身学习者&lt;/p&gt;\n&lt;div class=\"info-tags\"&gt;\n  &lt;span class=\"tag\"&gt;📍 北京，中国&lt;/span&gt;\n  &lt;span class=\"tag\"&gt;🎓 计算机科学&lt;/span&gt;\n  &lt;span class=\"tag\"&gt;💼 3年工作经验&lt;/span&gt;\n&lt;/div&gt;\n\n\n\n大家好！我是小枫，一名充满热情的软件开发者和数据科学爱好者。我毕业于北京某知名高校计算机科学专业，目前在一家科技公司担任数据工程师。\n我热衷于探索数据背后的故事，喜欢用技术解决实际问题。业余时间我喜欢写技术博客、参与开源项目，以及不断学习新技术。这个网站是我用 Quarto 构建的个人空间，用来记录我的学习历程和项目成果。"
+  },
+  {
+    "objectID": "about.html#教育背景",
+    "href": "about.html#教育背景",
+    "title": "👤 关于我",
+    "section": "🎓 教育背景",
+    "text": "🎓 教育背景\n\n\n🏫 北京科技大学\n计算机科学与技术 · 本科\n📅 2018 年 9 月 — 2022 年 6 月\n主修课程：数据结构与算法、操作系统、数据库原理、机器学习、数据挖掘\n毕业论文：《基于深度学习的图像识别系统设计与实现》（优秀）\n\n\n📚 在线课程与认证 - Coursera：Machine Learning Specialization（Andrew Ng，2023） - DeepLearning.AI：Deep Learning Specialization（2023） - 阿里云：云计算工程师认证 ACA（2022）"
+  },
+  {
+    "objectID": "about.html#工作经历",
+    "href": "about.html#工作经历",
+    "title": "👤 关于我",
+    "section": "💼 工作经历",
+    "text": "💼 工作经历\n\n\n🏢 某科技有限公司 · 数据工程师\n📅 2023 年 3 月 — 至今 · 北京\n\n负责公司核心数据仓库的设计与维护，管理日均 TB 级数据流量\n搭建自动化 ETL 数据管道，将数据处理效率提升 40%\n使用 Python + Spark 开发数据分析工具，支持业务决策\n参与机器学习模型的工程化部署，实现用户行为预测系统上线\n\n\n\n🏢 某互联网公司 · 后端开发实习生\n📅 2022 年 3 月 — 2022 年 8 月 · 北京\n\n参与用户管理微服务的开发，使用 Python FastAPI 框架\n编写单元测试，代码覆盖率从 60% 提升至 90%\n协助团队完成 MySQL 数据库查询优化，核心接口响应时间降低 35%"
+  },
+  {
+    "objectID": "about.html#技术技能",
+    "href": "about.html#技术技能",
+    "title": "👤 关于我",
+    "section": "🛠️ 技术技能",
+    "text": "🛠️ 技术技能\n\n编程语言\n\n\n\n\n技能\n熟练程度\n\n\n\n\nPython\n████████████████████ 95%\n\n\nR\n████████████████░░░░ 80%\n\n\nJavaScript\n███████████████░░░░░ 75%\n\n\nSQL\n█████████████████░░░ 85%\n\n\nHTML/CSS\n████████████████░░░░ 80%\n\n\nJava\n██████████░░░░░░░░░░ 50%\n\n\n\n\n\n\n框架与工具\n\n🐍 Python ⚛️ React 🔥 FastAPI 🐼 Pandas 🤖 PyTorch 📊 Plotly 🗄️ PostgreSQL 🐳 Docker ☁️ Git ⚡ Spark 📓 Jupyter 📄 Quarto"
+  },
+  {
+    "objectID": "about.html#荣誉与奖项",
+    "href": "about.html#荣誉与奖项",
+    "title": "👤 关于我",
+    "section": "🏆 荣誉与奖项",
+    "text": "🏆 荣誉与奖项\n\n🥇 2023 年全国高校数据挖掘竞赛 — 一等奖（Top 5%）\n🥈 2022 年 Kaggle 房价预测竞赛 — 银牌（Top 8%）\n🏅 北京科技大学优秀毕业生 — 2022 届\n📜 GitHub 开源贡献 — 累计获得 500+ Stars"
+  },
+  {
+    "objectID": "about.html#关于-quarto",
+    "href": "about.html#关于-quarto",
+    "title": "👤 关于我",
+    "section": "💡 关于 Quarto",
+    "text": "💡 关于 Quarto\n这个网站是我使用 Quarto 构建的，Quarto 是一个强大的开源科学出版系统。\n\n\nCode\n# 安装 Quarto 后，只需运行以下命令即可预览网站\nquarto preview\n\n\n# Quarto 支持 Python 代码块\nimport pandas as pd\nimport matplotlib.pyplot as plt\n\n# 展示一些简单的数据可视化\ndata = {\"技能\": [\"Python\", \"R\", \"JS\", \"SQL\"], \"熟练度\": [95, 80, 75, 85]}\ndf = pd.DataFrame(data)\nprint(df)\n\n💬 学习 Quarto 的心得： Quarto 让我能够将代码、文档和可视化完美地结合在一起，非常适合数据科学工作者构建知识分享平台。"
+  },
+  {
+    "objectID": "about.html#联系我",
+    "href": "about.html#联系我",
+    "title": "👤 关于我",
+    "section": "📬 联系我",
+    "text": "📬 联系我\n如果你对我的项目感兴趣，或者想要交流技术话题，欢迎通过以下方式联系我：\n\n\n📧 邮箱： xiaofeng@example.com\n\n\n🐙 GitHub： github.com/xiaozz-zl\n\n\n🐦 微博： @小枫爱coding\n\n\n💬 微信： xiaofeng_dev（请注明来意）"
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "👋 你好，我是小枫",
+    "section": "",
+    "text": "&lt;h1 class=\"hero-title\"&gt;Hi, I'm &lt;span class=\"highlight\"&gt;小枫&lt;/span&gt; 👋&lt;/h1&gt;\n&lt;p class=\"hero-subtitle\"&gt;数据科学 · 全栈开发 · 开源爱好者&lt;/p&gt;\n&lt;p class=\"hero-desc\"&gt;\n  我是一名热爱技术的开发者，专注于数据分析与可视化、Web 开发以及机器学习领域。\n  热衷于用代码解决实际问题，喜欢分享知识和学习新技术。\n&lt;/p&gt;\n&lt;div class=\"hero-buttons\"&gt;\n  &lt;a href=\"about.qmd\" class=\"btn-primary\"&gt;了解更多 →&lt;/a&gt;\n  &lt;a href=\"projects.qmd\" class=\"btn-secondary\"&gt;查看项目&lt;/a&gt;\n&lt;/div&gt;\n\n\n&lt;div class=\"avatar-circle\"&gt;🧑‍💻&lt;/div&gt;"
+  },
+  {
+    "objectID": "index.html#技能亮点",
+    "href": "index.html#技能亮点",
+    "title": "👋 你好，我是小枫",
+    "section": "🌟 技能亮点",
+    "text": "🌟 技能亮点\n\n\n📊 数据科学\n\nPython (Pandas, NumPy, Matplotlib)\nR 语言数据分析\n机器学习 (Scikit-learn)\n数据可视化 (ggplot2, Plotly)\n\n\n\n🌐 Web 开发\n\nHTML / CSS / JavaScript\nReact & Vue.js 前端框架\nPython Flask / FastAPI\nQuarto 文档与网站构建\n\n\n\n🛠️ 工具与平台\n\nGit & GitHub 版本控制\nDocker 容器化部署\nLinux 系统运维\nJupyter Notebook / VS Code"
+  },
+  {
+    "objectID": "index.html#精选项目",
+    "href": "index.html#精选项目",
+    "title": "👋 你好，我是小枫",
+    "section": "🚀 精选项目",
+    "text": "🚀 精选项目\n\n\n📈 股票数据分析平台\n基于 Python + Dash 构建的交互式股票数据分析仪表盘，支持实时数据获取与多维度可视化分析。\n技术栈： Python · Dash · Pandas · Plotly\n查看详情 →\n\n\n🤖 智能文本分类器\n利用 BERT 模型实现新闻文本的自动分类，准确率达 94.5%，已开源至 GitHub。\n技术栈： Python · PyTorch · Transformers · FastAPI\n查看详情 →\n\n\n🌍 个人博客系统\n使用 Quarto 构建的静态博客网站，支持 Markdown 写作，自动部署到 GitHub Pages。\n技术栈： Quarto · GitHub Actions · HTML/CSS\n查看详情 →"
+  },
+  {
+    "objectID": "index.html#最新博客",
+    "href": "index.html#最新博客",
+    "title": "👋 你好，我是小枫",
+    "section": "📝 最新博客",
+    "text": "📝 最新博客\n\n\nQuarto 入门指南：从零构建个人网站\n2025-03-10 · 5 分钟阅读\nQuarto 是新一代科学出版系统，本文带你从零开始搭建一个漂亮的个人网站…\n\n\nPython 数据可视化的 10 个技巧\n2025-02-28 · 8 分钟阅读\n数据可视化是数据分析的重要环节，这里分享我在日常工作中积累的实用技巧…\n\n\nGit 工作流最佳实践\n2025-02-15 · 6 分钟阅读\n良好的 Git 工作流能够大大提升团队协作效率，本文介绍几种常见的分支管理策略…\n\n查看全部博客 →"
+  },
+  {
+    "objectID": "index.html#联系我",
+    "href": "index.html#联系我",
+    "title": "👋 你好，我是小枫",
+    "section": "📬 联系我",
+    "text": "📬 联系我\n\n\n\n&lt;span class=\"contact-icon\"&gt;📧&lt;/span&gt;\n&lt;span&gt;xiaofeng@example.com&lt;/span&gt;\n\n\n&lt;span class=\"contact-icon\"&gt;🐙&lt;/span&gt;\n&lt;a href=\"https://github.com/xiaozz-zl\" target=\"_blank\"&gt;github.com/xiaozz-zl&lt;/a&gt;\n\n\n&lt;span class=\"contact-icon\"&gt;📍&lt;/span&gt;\n&lt;span&gt;中国 · 北京&lt;/span&gt;"
+  }
+]

@@ -1,0 +1,689 @@
+/* ===================================
+   小枫的个人网站 - 自定义样式
+   =================================== */
+
+/* ---------- 全局变量 ---------- */
+:root {
+  --primary: #4f86c6;
+  --primary-dark: #2d5f8a;
+  --accent: #f5a623;
+  --text-main: #2c3e50;
+  --text-muted: #6c757d;
+  --bg-light: #f8f9fa;
+  --bg-card: #ffffff;
+  --border: #e9ecef;
+  --radius: 12px;
+  --shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+  --shadow-hover: 0 8px 30px rgba(79, 134, 198, 0.2);
+  --transition: all 0.3s ease;
+}
+
+/* ---------- 基础排版 ---------- */
+body {
+  font-family: "PingFang SC", "Microsoft YaHei", "Helvetica Neue", Arial, sans-serif;
+  color: var(--text-main);
+  line-height: 1.8;
+}
+
+a {
+  color: var(--primary);
+  text-decoration: none;
+  transition: var(--transition);
+}
+
+a:hover {
+  color: var(--primary-dark);
+  text-decoration: underline;
+}
+
+/* ---------- 导航栏 ---------- */
+.navbar {
+  backdrop-filter: blur(10px);
+  background: rgba(255, 255, 255, 0.95) !important;
+  border-bottom: 1px solid var(--border);
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.06);
+}
+
+.navbar-brand {
+  font-weight: 700;
+  font-size: 1.2rem;
+  color: var(--primary) !important;
+}
+
+/* ---------- Hero 区域 ---------- */
+.hero-section {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  border-radius: var(--radius);
+  padding: 3rem 2rem;
+  margin-bottom: 3rem;
+  color: white;
+}
+
+.hero-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.hero-text {
+  flex: 1;
+  min-width: 280px;
+}
+
+.hero-title {
+  font-size: 2.5rem !important;
+  font-weight: 800;
+  margin-bottom: 0.5rem;
+  color: white !important;
+  border: none !important;
+}
+
+.highlight {
+  color: var(--accent);
+  text-shadow: 0 0 20px rgba(245, 166, 35, 0.5);
+}
+
+.hero-subtitle {
+  font-size: 1.1rem;
+  opacity: 0.9;
+  margin-bottom: 1rem;
+  letter-spacing: 1px;
+}
+
+.hero-desc {
+  opacity: 0.85;
+  font-size: 0.95rem;
+  line-height: 1.8;
+  margin-bottom: 1.5rem;
+}
+
+.hero-buttons {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.btn-primary {
+  background: white;
+  color: var(--primary) !important;
+  padding: 0.6rem 1.5rem;
+  border-radius: 50px;
+  font-weight: 600;
+  text-decoration: none !important;
+  transition: var(--transition);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+}
+
+.btn-primary:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+}
+
+.btn-secondary {
+  background: rgba(255, 255, 255, 0.2);
+  color: white !important;
+  padding: 0.6rem 1.5rem;
+  border-radius: 50px;
+  font-weight: 600;
+  border: 2px solid rgba(255, 255, 255, 0.6);
+  text-decoration: none !important;
+  transition: var(--transition);
+}
+
+.btn-secondary:hover {
+  background: rgba(255, 255, 255, 0.3);
+  transform: translateY(-2px);
+}
+
+.hero-avatar {
+  flex-shrink: 0;
+}
+
+.avatar-circle {
+  width: 140px;
+  height: 140px;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 4rem;
+  border: 3px solid rgba(255, 255, 255, 0.4);
+  animation: float 3s ease-in-out infinite;
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+}
+
+/* ---------- 技能卡片网格 ---------- */
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1.5rem;
+  margin: 1.5rem 0;
+}
+
+.skill-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 1.5rem;
+  transition: var(--transition);
+  box-shadow: var(--shadow);
+}
+
+.skill-card:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-hover);
+  border-color: var(--primary);
+}
+
+.skill-card h3 {
+  font-size: 1rem;
+  margin-bottom: 0.8rem;
+  color: var(--primary);
+  border: none;
+}
+
+.skill-card ul {
+  padding-left: 1.2rem;
+  margin: 0;
+  font-size: 0.88rem;
+  color: var(--text-muted);
+}
+
+.skill-card li {
+  margin-bottom: 0.3rem;
+}
+
+/* ---------- 项目卡片网格 ---------- */
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 1.5rem;
+  margin: 1.5rem 0;
+}
+
+.project-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 1.5rem;
+  transition: var(--transition);
+  box-shadow: var(--shadow);
+  border-top: 3px solid var(--primary);
+}
+
+.project-card:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-hover);
+}
+
+.project-card h4 {
+  font-size: 1rem;
+  margin-bottom: 0.6rem;
+  color: var(--text-main);
+  border: none;
+}
+
+/* ---------- 项目详情卡片 ---------- */
+.project-detail-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 2rem;
+  margin: 1.5rem 0;
+  box-shadow: var(--shadow);
+  transition: var(--transition);
+}
+
+.project-detail-card:hover {
+  box-shadow: var(--shadow-hover);
+}
+
+.project-detail-card h3 {
+  color: var(--primary);
+  font-size: 1.2rem;
+  border-bottom: 2px solid var(--border);
+  padding-bottom: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+/* ---------- 技术徽章 ---------- */
+.tech-badges {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin: 0.8rem 0;
+}
+
+.badge-python {
+  background: #3572A5;
+  color: white;
+  padding: 0.25rem 0.75rem;
+  border-radius: 20px;
+  font-size: 0.8rem;
+  font-weight: 600;
+}
+
+.badge-js {
+  background: #f7df1e;
+  color: #333;
+  padding: 0.25rem 0.75rem;
+  border-radius: 20px;
+  font-size: 0.8rem;
+  font-weight: 600;
+}
+
+.badge-quarto {
+  background: #75aadb;
+  color: white;
+  padding: 0.25rem 0.75rem;
+  border-radius: 20px;
+  font-size: 0.8rem;
+  font-weight: 600;
+}
+
+.badge-lib {
+  background: var(--bg-light);
+  color: var(--text-muted);
+  padding: 0.25rem 0.75rem;
+  border-radius: 20px;
+  font-size: 0.8rem;
+  border: 1px solid var(--border);
+}
+
+/* ---------- 博客预览 ---------- */
+.blog-preview {
+  background: var(--bg-light);
+  border-radius: var(--radius);
+  padding: 1.5rem;
+  margin: 1.5rem 0;
+}
+
+.blog-item {
+  padding: 1rem 0;
+  border-bottom: 1px solid var(--border);
+  font-size: 0.93rem;
+}
+
+.blog-item:last-child {
+  border-bottom: none;
+  padding-bottom: 0;
+}
+
+/* ---------- 笔记列表 ---------- */
+.note-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin: 1rem 0;
+}
+
+.note-item {
+  background: var(--bg-card);
+  border-left: 4px solid var(--primary);
+  border-radius: 0 var(--radius) var(--radius) 0;
+  padding: 1rem 1.5rem;
+  box-shadow: var(--shadow);
+  transition: var(--transition);
+}
+
+.note-item:hover {
+  transform: translateX(4px);
+  box-shadow: var(--shadow-hover);
+}
+
+/* ---------- 时间线 ---------- */
+.timeline {
+  position: relative;
+  padding-left: 1.5rem;
+  margin: 1rem 0;
+}
+
+.timeline::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 2px;
+  background: linear-gradient(to bottom, var(--primary), var(--accent));
+}
+
+.timeline-item {
+  position: relative;
+  padding: 1.2rem 1.5rem;
+  margin-bottom: 1.5rem;
+  background: var(--bg-card);
+  border-radius: 0 var(--radius) var(--radius) 0;
+  box-shadow: var(--shadow);
+  border: 1px solid var(--border);
+  transition: var(--transition);
+}
+
+.timeline-item::before {
+  content: "";
+  position: absolute;
+  left: -1.65rem;
+  top: 1.3rem;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: var(--primary);
+  border: 2px solid white;
+  box-shadow: 0 0 0 2px var(--primary);
+}
+
+.timeline-item:hover {
+  transform: translateX(4px);
+  box-shadow: var(--shadow-hover);
+}
+
+/* ---------- 关于页面 ---------- */
+.about-hero {
+  background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+  border-radius: var(--radius);
+  padding: 2rem;
+  margin-bottom: 2rem;
+}
+
+.about-container {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.big-avatar {
+  width: 100px;
+  height: 100px;
+  background: white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 3rem;
+  box-shadow: var(--shadow);
+}
+
+.about-info h2 {
+  font-size: 1.8rem;
+  margin-bottom: 0.3rem;
+  border: none;
+}
+
+.en-name {
+  color: var(--text-muted);
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+.tagline {
+  color: var(--text-muted);
+  font-size: 0.95rem;
+  margin-bottom: 0.8rem;
+}
+
+.info-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.tag {
+  background: white;
+  padding: 0.25rem 0.75rem;
+  border-radius: 20px;
+  font-size: 0.82rem;
+  color: var(--text-muted);
+  border: 1px solid var(--border);
+}
+
+/* ---------- 技术标签云 ---------- */
+.tags-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin: 1rem 0;
+}
+
+.tech-tag {
+  background: var(--bg-light);
+  color: var(--primary);
+  padding: 0.35rem 0.9rem;
+  border-radius: 20px;
+  font-size: 0.85rem;
+  border: 1px solid var(--primary);
+  transition: var(--transition);
+  cursor: default;
+}
+
+.tech-tag:hover {
+  background: var(--primary);
+  color: white;
+}
+
+/* ---------- 标签云（博客页） ---------- */
+.tag-cloud {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+  margin: 1rem 0;
+}
+
+.tag-link {
+  background: var(--bg-light);
+  color: var(--text-muted) !important;
+  padding: 0.3rem 0.9rem;
+  border-radius: 20px;
+  font-size: 0.85rem;
+  border: 1px solid var(--border);
+  transition: var(--transition);
+  text-decoration: none !important;
+}
+
+.tag-link:hover {
+  background: var(--primary);
+  color: white !important;
+  border-color: var(--primary);
+  transform: translateY(-2px);
+}
+
+.tag-link.tag-hot {
+  background: rgba(245, 166, 35, 0.1);
+  color: var(--accent) !important;
+  border-color: var(--accent);
+  font-weight: 600;
+}
+
+.tag-link.tag-hot:hover {
+  background: var(--accent);
+  color: white !important;
+}
+
+/* ---------- 联系区域 ---------- */
+.contact-section {
+  background: var(--bg-light);
+  border-radius: var(--radius);
+  padding: 1.5rem;
+  margin: 1rem 0;
+}
+
+.contact-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.contact-item {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.6rem 1.2rem;
+  background: white;
+  border-radius: 8px;
+  border: 1px solid var(--border);
+  font-size: 0.9rem;
+  transition: var(--transition);
+}
+
+.contact-item:hover {
+  border-color: var(--primary);
+  box-shadow: 0 2px 8px rgba(79, 134, 198, 0.15);
+}
+
+.contact-icon {
+  font-size: 1.2rem;
+}
+
+/* ---------- 页脚 ---------- */
+.nav-footer {
+  border-top: 1px solid var(--border);
+  background: var(--bg-light);
+  color: var(--text-muted);
+  font-size: 0.88rem;
+}
+
+/* ---------- 代码块 ---------- */
+pre {
+  border-radius: var(--radius) !important;
+  border: 1px solid var(--border);
+}
+
+code {
+  background: rgba(79, 134, 198, 0.1);
+  color: var(--primary-dark);
+  padding: 0.15em 0.4em;
+  border-radius: 4px;
+  font-size: 0.88em;
+}
+
+pre code {
+  background: transparent;
+  color: inherit;
+  padding: 0;
+}
+
+/* ---------- 表格 ---------- */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 1rem 0;
+  border-radius: var(--radius);
+  overflow: hidden;
+  box-shadow: var(--shadow);
+}
+
+thead {
+  background: var(--primary);
+  color: white;
+}
+
+th {
+  padding: 0.8rem 1rem;
+  text-align: left;
+  font-weight: 600;
+}
+
+td {
+  padding: 0.7rem 1rem;
+  border-bottom: 1px solid var(--border);
+}
+
+tr:last-child td {
+  border-bottom: none;
+}
+
+tr:hover td {
+  background: rgba(79, 134, 198, 0.05);
+}
+
+/* ---------- 引用块 ---------- */
+blockquote {
+  border-left: 4px solid var(--primary);
+  background: rgba(79, 134, 198, 0.06);
+  border-radius: 0 var(--radius) var(--radius) 0;
+  padding: 1rem 1.5rem;
+  margin: 1rem 0;
+  font-style: normal;
+  color: var(--text-main);
+}
+
+/* ---------- 分割线 ---------- */
+hr {
+  border: none;
+  border-top: 2px solid var(--border);
+  margin: 2rem 0;
+}
+
+/* ---------- 响应式适配 ---------- */
+@media (max-width: 768px) {
+  .hero-title {
+    font-size: 1.8rem !important;
+  }
+
+  .hero-container {
+    flex-direction: column-reverse;
+    text-align: center;
+  }
+
+  .hero-buttons {
+    justify-content: center;
+  }
+
+  .avatar-circle {
+    width: 100px;
+    height: 100px;
+    font-size: 3rem;
+  }
+
+  .skills-grid,
+  .projects-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .about-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .info-tags {
+    justify-content: center;
+  }
+}
+
+/* ---------- 页面过渡动画 ---------- */
+.quarto-title-block {
+  animation: fadeInDown 0.6s ease;
+}
+
+main > * {
+  animation: fadeInUp 0.5s ease;
+}
+
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
